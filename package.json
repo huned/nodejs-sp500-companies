@@ -1,8 +1,8 @@
 {
-  "name": "nodejs-sp500-constituents-list",
+  "name": "nodejs-sp500-companies",
   "version": "0.0.1",
   "type": "module",
-  "description": "Get a list of all S&P500 constituent companies",
+  "description": "Up-to-date S&P 500 constituent companies as an array of JSON objects",
   "main": "index.js",
   "scripts": {
     "test": "standard --env mocha && NODE_ENV=test mocha --recursive",
@@ -11,10 +11,11 @@
   "bin": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/huned/nodejs-sp500-constituents-list.git"
+    "url": "git://github.com/huned/nodejs-sp500-companies.git"
   },
   "keywords": [
     "node.js",
+    "s&p 500",
     "sp500"
   ],
   "author": "Huned Botee <huned@hunedbotee.com> (https://hunedbotee.com)",
