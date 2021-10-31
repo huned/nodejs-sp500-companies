@@ -1,8 +1,8 @@
 {
-  "name": "nodejs-starter",
-  "version": "0.0.2",
+  "name": "nodejs-sp500-constituents-list",
+  "version": "0.0.1",
   "type": "module",
-  "description": "Huned's opinionated nodejs starter repository",
+  "description": "Get a list of all S&P500 constituent companies",
   "main": "index.js",
   "scripts": {
     "test": "standard --env mocha && NODE_ENV=test mocha --recursive",
@@ -11,12 +11,11 @@
   "bin": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/huned/nodejs-starter.git"
+    "url": "git://github.com/huned/nodejs-sp500-constituents-list.git"
   },
   "keywords": [
     "node.js",
-    "starter",
-    "template"
+    "sp500"
   ],
   "author": "Huned Botee <huned@hunedbotee.com> (https://hunedbotee.com)",
   "license": "MIT",
