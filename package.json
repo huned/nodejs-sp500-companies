@@ -1,12 +1,11 @@
 {
-  "name": "nodejs-sp500-companies",
+  "name": "sp500-companies-as-json",
   "version": "0.0.1",
   "type": "module",
   "description": "Up-to-date S&P 500 constituent companies as an array of JSON objects",
   "main": "index.js",
   "scripts": {
-    "test": "standard --env mocha && NODE_ENV=test mocha --recursive",
-    "start": "node ./index.js"
+    "test": "standard --env mocha && NODE_ENV=test mocha --recursive"
   },
   "bin": "./index.js",
   "repository": {

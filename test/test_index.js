@@ -1,11 +1,11 @@
 import assert from 'assert'
 import nock from 'nock'
 import * as fs from 'fs/promises'
-import sp500Constituents from '../index.js'
+import sp500CompaniesAsJSON from '../index.js'
 
 // NOTE: don't use arrow functions with mocha.
 // See https://github.com/mochajs/mocha/issues/2018
-describe('S&P500 Constituents', function () {
+describe('sp500CompaniesAsJSON()', function () {
   let results = null
 
   beforeEach(async function () {
@@ -13,7 +13,7 @@ describe('S&P500 Constituents', function () {
     nock('http://en.wikipedia.org')
       .get('/wiki/List_of_S%26P_500_companies')
       .reply(200, mockHTML)
-    results = await sp500Constituents()
+    results = await sp500CompaniesAsJSON()
   })
 
   it('returns correct length array', function () {
