@@ -1,58 +1,49 @@
-# Huned's opinionated nodejs starter repository for lazy developers
+# TODOs
 
-Main repo: [https://github.com/huned/nodejs-starter](https://github.com/huned/nodejs-starter)
+- npm publish
 
-Use this repository as a template for your next node.js project.
+# S&P 500 Index Companies
+
+Main repo: [https://github.com/huned/nodejs-sp500-companies](https://github.com/huned/nodejs-sp500-companies)
+
+Returns an up-to-date list of S&P 500 constituent companies and metadata as a
+useful JSON array.
 
 ## Installation
 
-    Nothing here yet.
+    npm install sp500-companies-as-json
 
 ## Usage
 
-    git clone git@github.com:huned/nodejs-starter <DIRNAME> && cd <DIRNAME>
+    import sp500CompaniesAsJSON from 'sp500-companies-as-json'
 
-    # Edit .git/config to reflect a different repo location
-    $EDITOR .git/config
+    const companies = await sp500CompaniesAsJSON()
 
-    # Edit package.json to suit your needs and re-generate package-lock.json
-    $EDITOR package.json
-    npm install
+    console.log(companies.length)
+    // 505
 
-    # Copy environment variables file and edit as needed.
-    cp .env.sample .env && $EDITOR .env
+    console.log(companies[0])
+    // {
+    //   ticker: 'MMM',
+    //   exchange: 'NYSE',
+    //   name: '3M',
+    //   gics: {
+    /      sector: 'Industrials',
+    //     subIndustry: 'Industrial Conglomerates'
+    //   },
+    //   dateAdded: '1976-08-09',
+    //   cik: '0000066740',
+    //   yearFounded: '1902'
+    // }
 
-    # Run tests
-    npm test
+## Contributing
 
-    # Run command line utility
-    npm start
+PRs are welcome so long as quality and speed aren't compromised.
 
-## Command Line Usage
-
-    npm start --silent
-
-## Library Choices:
-
-These come installed:
-
-* colors: use colors at the terminal
-* debug: better debug printing
-* dotenv: for loading environment variables from `.env`
-* mocha: for testing
-* sinon: for mocking and stubbing
-* standard: enforces standard js style
-
-Use these as needed in projects. They're of reasonable quality.
-
-* lodash: utility stuff
-* meow: helper for command line programs
-* numeral: number parsing and formatting
-* moment: date/time parsing and formatting
-* got: making http requests
-* cheerio: parsing html
-* puppeteer: web scraping via headless chromium
-* pdfjs-dist: pdf parsing and rendering
+1. Fork repo
+2. Create a branch
+3. Make your changes and add tests (`npm test`)
+4. Submit PR
 
 ## Author(s)
 
