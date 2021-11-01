@@ -1,7 +1,3 @@
-# TODOs
-
-- npm publish
-
 # S&P 500 Index Companies
 
 Main repo: [https://github.com/huned/nodejs-sp500-companies](https://github.com/huned/nodejs-sp500-companies)
