@@ -1,6 +1,6 @@
 {
   "name": "sp500-companies-as-json",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "type": "module",
   "description": "A library and command line program that returns up-to-date S&P 500 constituent companies as an array of JSON objects",
   "main": "index.js",
