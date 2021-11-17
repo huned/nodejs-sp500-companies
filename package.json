@@ -2,12 +2,15 @@
   "name": "sp500-companies-as-json",
   "version": "0.0.1",
   "type": "module",
-  "description": "Up-to-date S&P 500 constituent companies as an array of JSON objects",
+  "description": "A library and command line program that returns up-to-date S&P 500 constituent companies as an array of JSON objects",
   "main": "index.js",
   "scripts": {
+    "start": "./lib/cli.js",
     "test": "standard --env mocha && NODE_ENV=test mocha --recursive"
   },
-  "bin": "./index.js",
+  "bin": {
+    "sp500co": "./lib/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/huned/nodejs-sp500-companies.git"

@@ -3,14 +3,33 @@
 Main repo: [https://github.com/huned/nodejs-sp500-companies](https://github.com/huned/nodejs-sp500-companies)
 
 Returns an up-to-date list of S&P 500 constituent companies and metadata as a
-useful JSON array.
+useful JSON array. The actual data is from [Wikipedia's List of S&P 500
+Companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)
 
-## Installation
+## Command Line Usage
 
-    npm install sp500-companies-as-json
+    $ npm install --g sp500-companies-as-json
 
-## Usage
+    $ sp500co | jq
+    [
+      {
+        "ticker": "MMM",
+        "exchange": "NYSE",
+        "name": "3M",
+        "gics": {
+          "sector": "Industrials",
+          "subIndustry": "Industrial Conglomerates"
+      },
+      ...
+    ]
 
+## Node.js Usage
+
+    ```bash
+    $ npm install sp500-companies-as-json --save
+    ```
+
+    ```js
     import sp500CompaniesAsJSON from 'sp500-companies-as-json'
 
     const companies = await sp500CompaniesAsJSON()
