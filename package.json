@@ -24,13 +24,13 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^9.0.1",
+    "nock": "^13.2.1",
     "standard": "^16.0.3"
   },
   "dependencies": {
     "@joshuaavalon/cheerio-table-parser": "^2.0.3",
     "cheerio": "^1.0.0-rc.10",
     "install": "^0.13.0",
-    "nock": "^13.1.4",
     "node-fetch": "^3.0.0",
     "npm": "^8.1.2"
   },
