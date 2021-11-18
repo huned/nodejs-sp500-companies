@@ -54,7 +54,10 @@ Companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)
 
 ## TODOs
 
-TBD
+- [ ] Implement other major indices
+  - [ ] Where can I get the list of components? Pospectuses or Wikipedia?
+  - [ ] Update CLI to use flags: --russell2000, --russell3000, --sp500, --json
+  - [ ] Rename CLI: indexls? lsindex?
 
 ## Contributing
 
