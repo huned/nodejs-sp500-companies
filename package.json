@@ -9,7 +9,7 @@
     "test": "standard --env mocha && NODE_ENV=test mocha --recursive"
   },
   "bin": {
-    "sp500co": "./lib/cli.js"
+    "sp500": "./lib/cli.js"
   },
   "repository": {
     "type": "git",

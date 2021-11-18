@@ -10,7 +10,7 @@ Companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)
 
     $ npm install --g sp500-companies-as-json
 
-    $ sp500co | jq
+    $ sp500 | jq
     [
       {
         "ticker": "MMM",
