@@ -54,10 +54,11 @@ Companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)
 
 ## TODOs
 
-- [ ] Implement other major indices
-  - [ ] Where can I get the list of components? Pospectuses or Wikipedia?
-  - [ ] Update CLI to use flags: --russell2000, --russell3000, --sp500, --json
-  - [ ] Rename CLI: indexls? lsindex?
+- [ ] rename "binary" to companies
+- [ ] CLI
+  - [ ] output CSV by default
+  - [ ] --index=sp500|russell2000|russell3000
+  - [ ] --json
 
 ## Contributing
 
